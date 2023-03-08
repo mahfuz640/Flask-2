@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form method="POST" action="{{ url_for('calculate') }}">
+        <input type="text" name="expression" id="expression" autofocus>
+        <br><br>
+        <button type="submit" name="submit">Calculate</button>
+    </form>
+    <br><br>
+    <h2>Result: {{ result }}</h2>
+</body>
+</html>
